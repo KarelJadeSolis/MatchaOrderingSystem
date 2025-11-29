@@ -84,6 +84,18 @@
     <Compile Include="Receipt Page.Designer.cs">
       <DependentUpon>Receipt Page.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Contact &amp; About Us Page.resx">
+      <DependentUpon>Contact &amp; About Us Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Food Menu.resx">
+      <DependentUpon>Food Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Landing Page.resx">
+      <DependentUpon>Landing Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ordering Page.resx">
+      <DependentUpon>Ordering Page.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -93,6 +105,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Receipt Page.resx">
+      <DependentUpon>Receipt Page.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

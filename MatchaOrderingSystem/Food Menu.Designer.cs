@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.lblAboutUs = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // lblAboutUs
+            // 
+            this.lblAboutUs.AutoSize = true;
+            this.lblAboutUs.Location = new System.Drawing.Point(318, 161);
+            this.lblAboutUs.Name = "lblAboutUs";
+            this.lblAboutUs.Size = new System.Drawing.Size(76, 16);
+            this.lblAboutUs.TabIndex = 0;
+            this.lblAboutUs.Text = "ABOUT US";
+            // 
+            // Food_Menu
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(770, 852);
+            this.Controls.Add(this.lblAboutUs);
+            this.Name = "Food_Menu";
             this.Text = "Food_Menu";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblAboutUs;
     }
 }
