@@ -42,21 +42,36 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnAbout_Contact = new System.Windows.Forms.Button();
+            this.btnOrder = new System.Windows.Forms.Button();
+            this.btnMenu2 = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // btnMenu
             // 
             this.btnMenu.BackColor = System.Drawing.Color.Green;
-            this.btnMenu.Font = new System.Drawing.Font("Modern No. 20", 28.2F, System.Drawing.FontStyle.Bold);
+            this.btnMenu.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenu.ForeColor = System.Drawing.Color.GreenYellow;
-            this.btnMenu.Location = new System.Drawing.Point(218, 533);
+            this.btnMenu.Location = new System.Drawing.Point(249, 601);
             this.btnMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(161, 63);
+            this.btnMenu.Size = new System.Drawing.Size(122, 43);
             this.btnMenu.TabIndex = 0;
             this.btnMenu.Text = "MENU";
             this.btnMenu.UseVisualStyleBackColor = false;
@@ -64,9 +79,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.panel1.Location = new System.Drawing.Point(12, 48);
+            this.panel1.Location = new System.Drawing.Point(12, 38);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(551, 167);
+            this.panel1.Size = new System.Drawing.Size(551, 148);
             this.panel1.TabIndex = 1;
             // 
             // panel2
@@ -82,9 +97,9 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(26, 34);
+            this.panel2.Location = new System.Drawing.Point(26, 24);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(562, 168);
+            this.panel2.Size = new System.Drawing.Size(562, 147);
             this.panel2.TabIndex = 2;
             // 
             // label1
@@ -92,7 +107,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(68, 0);
+            this.label1.Location = new System.Drawing.Point(68, -10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(337, 74);
             this.label1.TabIndex = 3;
@@ -103,7 +118,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cooper Black", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(386, 0);
+            this.label2.Location = new System.Drawing.Point(386, -9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(179, 74);
             this.label2.TabIndex = 4;
@@ -115,7 +130,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Showcard Gothic", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.GreenYellow;
-            this.label3.Location = new System.Drawing.Point(103, 67);
+            this.label3.Location = new System.Drawing.Point(103, 55);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(419, 33);
             this.label3.TabIndex = 3;
@@ -126,7 +141,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(102, 104);
+            this.label4.Location = new System.Drawing.Point(102, 85);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(432, 24);
             this.label4.TabIndex = 3;
@@ -135,7 +150,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(109, 131);
+            this.pictureBox1.Location = new System.Drawing.Point(109, 107);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(28, 31);
@@ -146,7 +161,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(403, 132);
+            this.pictureBox3.Location = new System.Drawing.Point(403, 108);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(32, 31);
@@ -157,7 +172,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(249, 130);
+            this.pictureBox2.Location = new System.Drawing.Point(249, 106);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(31, 36);
@@ -170,7 +185,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(147, 139);
+            this.label5.Location = new System.Drawing.Point(147, 115);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 16);
             this.label5.TabIndex = 9;
@@ -182,7 +197,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(285, 139);
+            this.label6.Location = new System.Drawing.Point(285, 115);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(113, 16);
             this.label6.TabIndex = 10;
@@ -193,12 +208,113 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(440, 138);
+            this.label7.Location = new System.Drawing.Point(440, 114);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(108, 20);
             this.label7.TabIndex = 4;
             this.label7.Text = "09794784238";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.label8);
+            this.panel3.Location = new System.Drawing.Point(12, 192);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(576, 38);
+            this.panel3.TabIndex = 3;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Chartreuse;
+            this.label8.Location = new System.Drawing.Point(29, 7);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(525, 24);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Have your MATCHA favorites delivered right to your doorstep!";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.panel4.Controls.Add(this.btnMenu2);
+            this.panel4.Controls.Add(this.btnOrder);
+            this.panel4.Controls.Add(this.btnAbout_Contact);
+            this.panel4.Location = new System.Drawing.Point(15, 234);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(573, 38);
+            this.panel4.TabIndex = 2;
+            // 
+            // btnAbout_Contact
+            // 
+            this.btnAbout_Contact.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbout_Contact.Location = new System.Drawing.Point(156, 1);
+            this.btnAbout_Contact.Name = "btnAbout_Contact";
+            this.btnAbout_Contact.Size = new System.Drawing.Size(200, 32);
+            this.btnAbout_Contact.TabIndex = 4;
+            this.btnAbout_Contact.Text = "About Us  Contact Us";
+            this.btnAbout_Contact.UseVisualStyleBackColor = true;
+            // 
+            // btnOrder
+            // 
+            this.btnOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrder.Location = new System.Drawing.Point(364, 1);
+            this.btnOrder.Name = "btnOrder";
+            this.btnOrder.Size = new System.Drawing.Size(200, 32);
+            this.btnOrder.TabIndex = 5;
+            this.btnOrder.Text = "Order Now";
+            this.btnOrder.UseVisualStyleBackColor = true;
+            // 
+            // btnMenu2
+            // 
+            this.btnMenu2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu2.Location = new System.Drawing.Point(11, 1);
+            this.btnMenu2.Name = "btnMenu2";
+            this.btnMenu2.Size = new System.Drawing.Size(137, 32);
+            this.btnMenu2.TabIndex = 6;
+            this.btnMenu2.Text = "Menu";
+            this.btnMenu2.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.pictureBox4.Location = new System.Drawing.Point(107, 380);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(166, 170);
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.DarkGreen;
+            this.panel5.Controls.Add(this.label9);
+            this.panel5.Location = new System.Drawing.Point(158, 340);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(285, 34);
+            this.panel5.TabIndex = 6;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.pictureBox5.Location = new System.Drawing.Point(345, 380);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(166, 170);
+            this.pictureBox5.TabIndex = 7;
+            this.pictureBox5.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.DarkSeaGreen;
+            this.label9.Location = new System.Drawing.Point(3, 3);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(278, 25);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Featured Menu Products";
             // 
             // Landing_Page
             // 
@@ -206,6 +322,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(600, 655);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnMenu);
@@ -217,6 +338,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -236,5 +364,15 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button btnAbout_Contact;
+        private System.Windows.Forms.Button btnMenu2;
+        private System.Windows.Forms.Button btnOrder;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label9;
     }
 }
