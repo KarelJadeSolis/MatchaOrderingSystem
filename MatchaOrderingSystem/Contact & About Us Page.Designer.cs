@@ -84,24 +84,24 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Modern No. 20", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Showcard Gothic", 20.25F, System.Drawing.FontStyle.Italic);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(250, 14);
+            this.label2.Location = new System.Drawing.Point(254, 20);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 40);
+            this.label2.Size = new System.Drawing.Size(48, 33);
             this.label2.TabIndex = 1;
             this.label2.Text = "US";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 20.25F, System.Drawing.FontStyle.Italic);
             this.label1.ForeColor = System.Drawing.Color.GreenYellow;
-            this.label1.Location = new System.Drawing.Point(110, 14);
+            this.label1.Location = new System.Drawing.Point(143, 19);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 40);
+            this.label1.Size = new System.Drawing.Size(104, 33);
             this.label1.TabIndex = 2;
             this.label1.Text = "ABOUT";
             // 
@@ -156,7 +156,7 @@
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel6.Controls.Add(this.label4);
             this.panel6.Controls.Add(this.label5);
-            this.panel6.Location = new System.Drawing.Point(106, 373);
+            this.panel6.Location = new System.Drawing.Point(106, 372);
             this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(431, 72);
@@ -165,12 +165,12 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Modern No. 20", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Showcard Gothic", 20.25F, System.Drawing.FontStyle.Italic);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(260, 12);
+            this.label4.Location = new System.Drawing.Point(240, 16);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 40);
+            this.label4.Size = new System.Drawing.Size(48, 33);
             this.label4.TabIndex = 1;
             this.label4.Text = "US";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -178,14 +178,15 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Modern No. 20", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Showcard Gothic", 20.25F, System.Drawing.FontStyle.Italic);
             this.label5.ForeColor = System.Drawing.Color.GreenYellow;
-            this.label5.Location = new System.Drawing.Point(82, 12);
+            this.label5.Location = new System.Drawing.Point(106, 15);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(188, 40);
+            this.label5.Size = new System.Drawing.Size(133, 33);
             this.label5.TabIndex = 2;
             this.label5.Text = "CONTACT";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox1
             // 
