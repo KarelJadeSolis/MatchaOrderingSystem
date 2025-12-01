@@ -19,7 +19,15 @@ namespace MatchaOrderingSystem
 
         private void button10_Click(object sender, EventArgs e)
         {
-
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FoodMenuCakes myFormMenuCakes = new FoodMenuCakes();
+            myFormMenuCakes.ShowDialog();
+           
+        }
+
     }
 }

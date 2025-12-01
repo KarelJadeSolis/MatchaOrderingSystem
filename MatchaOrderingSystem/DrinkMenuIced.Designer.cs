@@ -66,7 +66,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCakes = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             panel2 = new System.Windows.Forms.Panel();
@@ -464,23 +464,24 @@
             this.button1.Text = "ICED LATTE";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnCakes
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.button2.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(28, 217);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(198, 76);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "CAKES";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnCakes.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnCakes.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCakes.ForeColor = System.Drawing.Color.Black;
+            this.btnCakes.Location = new System.Drawing.Point(28, 217);
+            this.btnCakes.Name = "btnCakes";
+            this.btnCakes.Size = new System.Drawing.Size(198, 76);
+            this.btnCakes.TabIndex = 5;
+            this.btnCakes.Text = "CAKES";
+            this.btnCakes.UseVisualStyleBackColor = false;
+            this.btnCakes.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel3
             // 
             panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            panel3.Controls.Add(this.button2);
+            panel3.Controls.Add(this.btnCakes);
             panel3.Controls.Add(this.button1);
             panel3.Controls.Add(this.label1);
             panel3.ForeColor = System.Drawing.Color.LightGreen;
@@ -594,7 +595,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCakes;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
     }

@@ -36,5 +36,23 @@ namespace MatchaOrderingSystem
         {
 
         }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAbout_Contact_Click(object sender, EventArgs e)
+        {
+           Form1 myFormContact = new Form1();
+            myFormContact.ShowDialog();
+        }
+
+        private void btnMenu2_Click(object sender, EventArgs e)
+        {   
+            DrinkMenuIced myFormMenuIced = new DrinkMenuIced();
+            myFormMenuIced.ShowDialog();
+            
+        }
     }
 }

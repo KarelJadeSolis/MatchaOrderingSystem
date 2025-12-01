@@ -21,5 +21,12 @@ namespace MatchaOrderingSystem
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DrinkMenuIced myReOpenFormMenuIced = new DrinkMenuIced();
+            myReOpenFormMenuIced.ShowDialog();
+        }
     }
 }

@@ -38,7 +38,7 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -190,7 +190,7 @@
             // 
             panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            panel3.Controls.Add(this.button2);
+            panel3.Controls.Add(this.btn);
             panel3.Controls.Add(this.button1);
             panel3.Controls.Add(this.label1);
             panel3.ForeColor = System.Drawing.Color.LightGreen;
@@ -200,17 +200,17 @@
             panel3.Size = new System.Drawing.Size(258, 958);
             panel3.TabIndex = 37;
             // 
-            // button2
+            // btn
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.button2.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(28, 219);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(198, 76);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "CAKES";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btn.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn.ForeColor = System.Drawing.Color.White;
+            this.btn.Location = new System.Drawing.Point(28, 219);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(198, 76);
+            this.btn.TabIndex = 5;
+            this.btn.Text = "CAKES";
+            this.btn.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -223,6 +223,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "ICED LATTE";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -559,7 +560,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;

@@ -53,6 +53,8 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -77,6 +79,7 @@
             this.btnMenu.TabIndex = 0;
             this.btnMenu.Text = "MENU";
             this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // panel1
             // 
@@ -279,6 +282,7 @@
             this.btnMenu2.TabIndex = 6;
             this.btnMenu2.Text = "Menu";
             this.btnMenu2.UseVisualStyleBackColor = true;
+            this.btnMenu2.Click += new System.EventHandler(this.btnMenu2_Click);
             // 
             // btnOrder
             // 
@@ -301,11 +305,12 @@
             this.btnAbout_Contact.TabIndex = 4;
             this.btnAbout_Contact.Text = "About Us  Contact Us";
             this.btnAbout_Contact.UseVisualStyleBackColor = true;
+            this.btnAbout_Contact.Click += new System.EventHandler(this.btnAbout_Contact_Click);
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.pictureBox4.Location = new System.Drawing.Point(143, 412);
+            this.pictureBox4.Location = new System.Drawing.Point(124, 469);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(221, 209);
@@ -338,12 +343,28 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.pictureBox5.Location = new System.Drawing.Point(460, 413);
+            this.pictureBox5.Location = new System.Drawing.Point(419, 469);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(221, 209);
             this.pictureBox5.TabIndex = 7;
             this.pictureBox5.TabStop = false;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel6.Location = new System.Drawing.Point(124, 711);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(221, 46);
+            this.panel6.TabIndex = 8;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel7.Location = new System.Drawing.Point(419, 711);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(221, 46);
+            this.panel7.TabIndex = 9;
             // 
             // Landing_Page
             // 
@@ -351,6 +372,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(814, 955);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.pictureBox4);
@@ -405,5 +428,7 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
     }
 }
