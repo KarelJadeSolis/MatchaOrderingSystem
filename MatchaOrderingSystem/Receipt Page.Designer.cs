@@ -28,21 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // button1
+            // label2
             // 
-            this.button1.Location = new System.Drawing.Point(363, 214);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Showcard Gothic", 10F, System.Drawing.FontStyle.Italic);
+            this.label2.Location = new System.Drawing.Point(62, 184);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 18);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Description";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Showcard Gothic", 11F, System.Drawing.FontStyle.Italic);
+            this.label3.Location = new System.Drawing.Point(379, 183);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 18);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Amount";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.panel1.Location = new System.Drawing.Point(1, 4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(609, 51);
+            this.panel1.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.label1.Font = new System.Drawing.Font("Broadway", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(238, 90);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 26);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "INVOICE";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.panel2.Location = new System.Drawing.Point(1, 488);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(609, 22);
+            this.panel2.TabIndex = 8;
             // 
             // Receipt_Page
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(814, 955);
@@ -50,11 +94,15 @@
             this.Name = "Receipt_Page";
             this.Text = "Receipt_Page";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
