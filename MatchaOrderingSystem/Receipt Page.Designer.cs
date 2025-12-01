@@ -32,13 +32,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Showcard Gothic", 10F, System.Drawing.FontStyle.Italic);
-            this.label2.Location = new System.Drawing.Point(123, 183);
+            this.label2.Location = new System.Drawing.Point(62, 184);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 18);
             this.label2.TabIndex = 3;
@@ -48,7 +49,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Showcard Gothic", 11F, System.Drawing.FontStyle.Italic);
-            this.label3.Location = new System.Drawing.Point(380, 183);
+            this.label3.Location = new System.Drawing.Point(379, 183);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 18);
             this.label3.TabIndex = 4;
@@ -75,12 +76,21 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "INVOICE";
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.panel2.Location = new System.Drawing.Point(1, 488);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(609, 22);
+            this.panel2.TabIndex = 8;
+            // 
             // Receipt_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(610, 776);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label3);
@@ -98,5 +108,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
