@@ -59,11 +59,11 @@
     <Compile Include="FoodMenuCakes.Designer.cs">
       <DependentUpon>FoodMenuCakes.cs</DependentUpon>
     </Compile>
-    <Compile Include="FoodMenuIced.cs">
+    <Compile Include="DrinkMenuIced.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FoodMenuIced.Designer.cs">
-      <DependentUpon>FoodMenuIced.cs</DependentUpon>
+    <Compile Include="DrinkMenuIced.Designer.cs">
+      <DependentUpon>DrinkMenuIced.cs</DependentUpon>
     </Compile>
     <Compile Include="Landing Page.cs">
       <SubType>Form</SubType>
@@ -91,8 +91,8 @@
     <EmbeddedResource Include="FoodMenuCakes.resx">
       <DependentUpon>FoodMenuCakes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FoodMenuIced.resx">
-      <DependentUpon>FoodMenuIced.cs</DependentUpon>
+    <EmbeddedResource Include="DrinkMenuIced.resx">
+      <DependentUpon>DrinkMenuIced.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Landing Page.resx">
       <DependentUpon>Landing Page.cs</DependentUpon>

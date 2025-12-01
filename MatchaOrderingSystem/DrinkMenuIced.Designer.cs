@@ -1,6 +1,6 @@
 ﻿namespace MatchaOrderingSystem
 {
-    partial class FoodMenuIced
+    partial class DrinkMenuIced
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             System.Windows.Forms.Panel panel3;
             System.Windows.Forms.Panel panel1;
             System.Windows.Forms.Panel panel2;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FoodMenuIced));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DrinkMenuIced));
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();

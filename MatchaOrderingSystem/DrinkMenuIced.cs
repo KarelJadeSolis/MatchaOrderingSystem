@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MatchaOrderingSystem
 {
-    public partial class FoodMenuIced : Form
+    public partial class DrinkMenuIced : Form
     {
-        public FoodMenuIced()
+        public DrinkMenuIced()
         {
             InitializeComponent();
         }
