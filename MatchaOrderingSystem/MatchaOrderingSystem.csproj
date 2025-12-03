@@ -53,6 +53,12 @@
     <Compile Include="Contact &amp; About Us Page.Designer.cs">
       <DependentUpon>Contact &amp; About Us Page.cs</DependentUpon>
     </Compile>
+    <Compile Include="FoodMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FoodMenu.Designer.cs">
+      <DependentUpon>FoodMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="FoodMenuCakes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,12 @@
     <Compile Include="Landing Page.Designer.cs">
       <DependentUpon>Landing Page.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ordering Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +94,9 @@
     <EmbeddedResource Include="Contact &amp; About Us Page.resx">
       <DependentUpon>Contact &amp; About Us Page.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FoodMenu.resx">
+      <DependentUpon>FoodMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FoodMenuCakes.resx">
       <DependentUpon>FoodMenuCakes.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Landing Page.resx">
       <DependentUpon>Landing Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ordering Page.resx">
       <DependentUpon>Ordering Page.cs</DependentUpon>
@@ -115,6 +133,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="starbucks-iced-matcha-latte-8.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -50,8 +50,8 @@ namespace MatchaOrderingSystem
 
         private void btnMenu2_Click(object sender, EventArgs e)
         {   
-            DrinkMenuIced myFormMenuIced = new DrinkMenuIced();
-            myFormMenuIced.ShowDialog();
+            MenuForm menuForm = new MenuForm();
+            menuForm.ShowDialog();
             
         }
     }
