@@ -121,7 +121,10 @@
     <Content Include="Screenshot 2025-12-03 200801.png" />
     <Content Include="Screenshot 2025-12-03 200940.png" />
     <Content Include="Screenshot 2025-12-03 201159.png" />
-    <Content Include="starbucks-iced-matcha-latte-8.jpg" />
+    <Content Include="Screenshot 2025-12-03 210306.png" />
+    <Content Include="Screenshot 2025-12-03 210320.png" />
+    <Content Include="Screenshot 2025-12-03 210406.png" />
+    <Content Include="Screenshot 2025-12-03 210422.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
