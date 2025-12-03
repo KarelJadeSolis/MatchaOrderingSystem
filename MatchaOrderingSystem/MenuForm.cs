@@ -13,13 +13,15 @@ namespace MatchaOrderingSystem
         {
             InitializeComponent();
             string rootPath = Application.StartupPath; // folder where EXE runs
-            string matchaImage = Path.Combine(rootPath, "..\\..\\starbucks-iced-matcha-latte-8.jpg");
-
+            string cakeImage0 = Path.Combine(rootPath, "..\\..\\Screenshot 2025-12-03 200704.png");
+            string cakeImage1 = Path.Combine(rootPath, "..\\..\\Screenshot 2025-12-03 200801.png");
+            string cakeImage2 = Path.Combine(rootPath, "..\\..\\Screenshot 2025-12-03 200940.png");
+            string cakeImage3 = Path.Combine(rootPath, "..\\..\\Screenshot 2025-12-03 201159.png");
             cakes = new FoodMenuForm(
-                new MenuItem("MatchaCakes", 234, matchaImage),
-                new MenuItem("Matcha Cheesecake", 456, matchaImage),
-                new MenuItem("Matcha Cupcake", 1234, matchaImage),
-                new MenuItem("Matcha Donut", 789, matchaImage)
+                new MenuItem("Strawberry Matcha", 220, cakeImage0),
+                new MenuItem("Azuki Matcha", 300, cakeImage1),
+                new MenuItem("Matcha", 200, cakeImage2),
+                new MenuItem("Chocolate Matcha", 210, cakeImage3)
                 );
             iced = new FoodMenuForm(
                 new MenuItem("Iced Matcha", 23442),

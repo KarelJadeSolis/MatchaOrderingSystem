@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FoodMenuForm));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.txtOrderQty4 = new System.Windows.Forms.NumericUpDown();
@@ -84,11 +85,12 @@
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(622, 619);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(829, 762);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel7
@@ -98,9 +100,10 @@
             this.panel7.Controls.Add(this.lblMenu4);
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(314, 312);
+            this.panel7.Location = new System.Drawing.Point(418, 385);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(305, 304);
+            this.panel7.Size = new System.Drawing.Size(407, 373);
             this.panel7.TabIndex = 3;
             // 
             // txtOrderQty4
@@ -110,10 +113,11 @@
             this.txtOrderQty4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.txtOrderQty4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOrderQty4.ForeColor = System.Drawing.Color.DarkGreen;
-            this.txtOrderQty4.Location = new System.Drawing.Point(0, 279);
+            this.txtOrderQty4.Location = new System.Drawing.Point(0, 343);
+            this.txtOrderQty4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtOrderQty4.Name = "txtOrderQty4";
             this.txtOrderQty4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtOrderQty4.Size = new System.Drawing.Size(305, 25);
+            this.txtOrderQty4.Size = new System.Drawing.Size(407, 30);
             this.txtOrderQty4.TabIndex = 5;
             this.txtOrderQty4.ValueChanged += new System.EventHandler(this.txtOrderQty4_ValueChanged);
             // 
@@ -122,11 +126,12 @@
             this.lblMenuPrice4.BackColor = System.Drawing.Color.SeaShell;
             this.lblMenuPrice4.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblMenuPrice4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMenuPrice4.Location = new System.Drawing.Point(0, 249);
+            this.lblMenuPrice4.Location = new System.Drawing.Point(0, 306);
+            this.lblMenuPrice4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMenuPrice4.Name = "lblMenuPrice4";
-            this.lblMenuPrice4.Size = new System.Drawing.Size(305, 23);
+            this.lblMenuPrice4.Size = new System.Drawing.Size(407, 28);
             this.lblMenuPrice4.TabIndex = 4;
-            this.lblMenuPrice4.Text = "label7";
+            this.lblMenuPrice4.Text = "210.00";
             this.lblMenuPrice4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMenu4
@@ -134,11 +139,12 @@
             this.lblMenu4.BackColor = System.Drawing.Color.SeaShell;
             this.lblMenu4.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblMenu4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMenu4.Location = new System.Drawing.Point(0, 226);
+            this.lblMenu4.Location = new System.Drawing.Point(0, 278);
+            this.lblMenu4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMenu4.Name = "lblMenu4";
-            this.lblMenu4.Size = new System.Drawing.Size(305, 23);
+            this.lblMenu4.Size = new System.Drawing.Size(407, 28);
             this.lblMenu4.TabIndex = 3;
-            this.lblMenu4.Text = "label8";
+            this.lblMenu4.Text = "Chocolate Matcha";
             this.lblMenu4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel8
@@ -146,17 +152,21 @@
             this.panel8.Controls.Add(this.pBoxMenuItem4);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(305, 226);
+            this.panel8.Size = new System.Drawing.Size(407, 278);
             this.panel8.TabIndex = 2;
             // 
             // pBoxMenuItem4
             // 
             this.pBoxMenuItem4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.pBoxMenuItem4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pBoxMenuItem4.Image = ((System.Drawing.Image)(resources.GetObject("pBoxMenuItem4.Image")));
             this.pBoxMenuItem4.Location = new System.Drawing.Point(0, 0);
+            this.pBoxMenuItem4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pBoxMenuItem4.Name = "pBoxMenuItem4";
-            this.pBoxMenuItem4.Size = new System.Drawing.Size(305, 226);
+            this.pBoxMenuItem4.Size = new System.Drawing.Size(407, 278);
+            this.pBoxMenuItem4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBoxMenuItem4.TabIndex = 0;
             this.pBoxMenuItem4.TabStop = false;
             // 
@@ -167,9 +177,10 @@
             this.panel5.Controls.Add(this.lblMenu3);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(3, 312);
+            this.panel5.Location = new System.Drawing.Point(4, 385);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(305, 304);
+            this.panel5.Size = new System.Drawing.Size(406, 373);
             this.panel5.TabIndex = 2;
             // 
             // txtOrderQty3
@@ -179,10 +190,11 @@
             this.txtOrderQty3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.txtOrderQty3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOrderQty3.ForeColor = System.Drawing.Color.DarkGreen;
-            this.txtOrderQty3.Location = new System.Drawing.Point(0, 279);
+            this.txtOrderQty3.Location = new System.Drawing.Point(0, 343);
+            this.txtOrderQty3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtOrderQty3.Name = "txtOrderQty3";
             this.txtOrderQty3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtOrderQty3.Size = new System.Drawing.Size(305, 25);
+            this.txtOrderQty3.Size = new System.Drawing.Size(406, 30);
             this.txtOrderQty3.TabIndex = 5;
             this.txtOrderQty3.ValueChanged += new System.EventHandler(this.txtOrderQty3_ValueChanged);
             // 
@@ -191,11 +203,12 @@
             this.lblMenuPrice3.BackColor = System.Drawing.Color.SeaShell;
             this.lblMenuPrice3.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblMenuPrice3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMenuPrice3.Location = new System.Drawing.Point(0, 249);
+            this.lblMenuPrice3.Location = new System.Drawing.Point(0, 306);
+            this.lblMenuPrice3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMenuPrice3.Name = "lblMenuPrice3";
-            this.lblMenuPrice3.Size = new System.Drawing.Size(305, 23);
+            this.lblMenuPrice3.Size = new System.Drawing.Size(406, 28);
             this.lblMenuPrice3.TabIndex = 4;
-            this.lblMenuPrice3.Text = "label5";
+            this.lblMenuPrice3.Text = "200.00";
             this.lblMenuPrice3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMenu3
@@ -203,11 +216,12 @@
             this.lblMenu3.BackColor = System.Drawing.Color.SeaShell;
             this.lblMenu3.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblMenu3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMenu3.Location = new System.Drawing.Point(0, 226);
+            this.lblMenu3.Location = new System.Drawing.Point(0, 278);
+            this.lblMenu3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMenu3.Name = "lblMenu3";
-            this.lblMenu3.Size = new System.Drawing.Size(305, 23);
+            this.lblMenu3.Size = new System.Drawing.Size(406, 28);
             this.lblMenu3.TabIndex = 3;
-            this.lblMenu3.Text = "label6";
+            this.lblMenu3.Text = "Matcha";
             this.lblMenu3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel6
@@ -215,17 +229,21 @@
             this.panel6.Controls.Add(this.pBoxMenuItem3);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(305, 226);
+            this.panel6.Size = new System.Drawing.Size(406, 278);
             this.panel6.TabIndex = 2;
             // 
             // pBoxMenuItem3
             // 
             this.pBoxMenuItem3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.pBoxMenuItem3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pBoxMenuItem3.Image = ((System.Drawing.Image)(resources.GetObject("pBoxMenuItem3.Image")));
             this.pBoxMenuItem3.Location = new System.Drawing.Point(0, 0);
+            this.pBoxMenuItem3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pBoxMenuItem3.Name = "pBoxMenuItem3";
-            this.pBoxMenuItem3.Size = new System.Drawing.Size(305, 226);
+            this.pBoxMenuItem3.Size = new System.Drawing.Size(406, 278);
+            this.pBoxMenuItem3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pBoxMenuItem3.TabIndex = 0;
             this.pBoxMenuItem3.TabStop = false;
             // 
@@ -237,9 +255,10 @@
             this.panel3.Controls.Add(this.lblMenu2);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(314, 3);
+            this.panel3.Location = new System.Drawing.Point(418, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(305, 303);
+            this.panel3.Size = new System.Drawing.Size(407, 373);
             this.panel3.TabIndex = 1;
             // 
             // txtOrderQty2
@@ -249,10 +268,11 @@
             this.txtOrderQty2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.txtOrderQty2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOrderQty2.ForeColor = System.Drawing.Color.DarkGreen;
-            this.txtOrderQty2.Location = new System.Drawing.Point(0, 278);
+            this.txtOrderQty2.Location = new System.Drawing.Point(0, 343);
+            this.txtOrderQty2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtOrderQty2.Name = "txtOrderQty2";
             this.txtOrderQty2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtOrderQty2.Size = new System.Drawing.Size(305, 25);
+            this.txtOrderQty2.Size = new System.Drawing.Size(407, 30);
             this.txtOrderQty2.TabIndex = 5;
             this.txtOrderQty2.ValueChanged += new System.EventHandler(this.txtOrderQty2_ValueChanged);
             // 
@@ -261,11 +281,12 @@
             this.lblMenuPrice2.BackColor = System.Drawing.Color.SeaShell;
             this.lblMenuPrice2.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblMenuPrice2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMenuPrice2.Location = new System.Drawing.Point(0, 246);
+            this.lblMenuPrice2.Location = new System.Drawing.Point(0, 302);
+            this.lblMenuPrice2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMenuPrice2.Name = "lblMenuPrice2";
-            this.lblMenuPrice2.Size = new System.Drawing.Size(305, 23);
+            this.lblMenuPrice2.Size = new System.Drawing.Size(407, 28);
             this.lblMenuPrice2.TabIndex = 4;
-            this.lblMenuPrice2.Text = "label3";
+            this.lblMenuPrice2.Text = "300.00";
             this.lblMenuPrice2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMenu2
@@ -273,11 +294,12 @@
             this.lblMenu2.BackColor = System.Drawing.Color.SeaShell;
             this.lblMenu2.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblMenu2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMenu2.Location = new System.Drawing.Point(0, 223);
+            this.lblMenu2.Location = new System.Drawing.Point(0, 274);
+            this.lblMenu2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMenu2.Name = "lblMenu2";
-            this.lblMenu2.Size = new System.Drawing.Size(305, 23);
+            this.lblMenu2.Size = new System.Drawing.Size(407, 28);
             this.lblMenu2.TabIndex = 3;
-            this.lblMenu2.Text = "label4";
+            this.lblMenu2.Text = "Azuki Matcha";
             this.lblMenu2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel4
@@ -285,19 +307,24 @@
             this.panel4.Controls.Add(this.pBoxMenuItem2);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(305, 223);
+            this.panel4.Size = new System.Drawing.Size(407, 274);
             this.panel4.TabIndex = 2;
             // 
             // pBoxMenuItem2
             // 
             this.pBoxMenuItem2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.pBoxMenuItem2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pBoxMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("pBoxMenuItem2.Image")));
             this.pBoxMenuItem2.Location = new System.Drawing.Point(0, 0);
+            this.pBoxMenuItem2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pBoxMenuItem2.Name = "pBoxMenuItem2";
-            this.pBoxMenuItem2.Size = new System.Drawing.Size(305, 223);
+            this.pBoxMenuItem2.Size = new System.Drawing.Size(407, 274);
+            this.pBoxMenuItem2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pBoxMenuItem2.TabIndex = 0;
             this.pBoxMenuItem2.TabStop = false;
+            this.pBoxMenuItem2.Click += new System.EventHandler(this.pBoxMenuItem2_Click);
             // 
             // panel1
             // 
@@ -306,9 +333,10 @@
             this.panel1.Controls.Add(this.lblMenu1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(305, 303);
+            this.panel1.Size = new System.Drawing.Size(406, 373);
             this.panel1.TabIndex = 0;
             // 
             // txtOrderQty1
@@ -318,10 +346,11 @@
             this.txtOrderQty1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.txtOrderQty1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOrderQty1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.txtOrderQty1.Location = new System.Drawing.Point(0, 278);
+            this.txtOrderQty1.Location = new System.Drawing.Point(0, 343);
+            this.txtOrderQty1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtOrderQty1.Name = "txtOrderQty1";
             this.txtOrderQty1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtOrderQty1.Size = new System.Drawing.Size(305, 25);
+            this.txtOrderQty1.Size = new System.Drawing.Size(406, 30);
             this.txtOrderQty1.TabIndex = 5;
             this.txtOrderQty1.ValueChanged += new System.EventHandler(this.txtOrderQty1_ValueChanged);
             // 
@@ -330,11 +359,12 @@
             this.lblMenuPrice1.BackColor = System.Drawing.Color.SeaShell;
             this.lblMenuPrice1.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblMenuPrice1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMenuPrice1.Location = new System.Drawing.Point(0, 246);
+            this.lblMenuPrice1.Location = new System.Drawing.Point(0, 302);
+            this.lblMenuPrice1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMenuPrice1.Name = "lblMenuPrice1";
-            this.lblMenuPrice1.Size = new System.Drawing.Size(305, 23);
+            this.lblMenuPrice1.Size = new System.Drawing.Size(406, 28);
             this.lblMenuPrice1.TabIndex = 4;
-            this.lblMenuPrice1.Text = "label2";
+            this.lblMenuPrice1.Text = "220.00";
             this.lblMenuPrice1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblMenuPrice1.Click += new System.EventHandler(this.lblMenuPrice1_Click);
             // 
@@ -343,11 +373,12 @@
             this.lblMenu1.BackColor = System.Drawing.Color.SeaShell;
             this.lblMenu1.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblMenu1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMenu1.Location = new System.Drawing.Point(0, 223);
+            this.lblMenu1.Location = new System.Drawing.Point(0, 274);
+            this.lblMenu1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMenu1.Name = "lblMenu1";
-            this.lblMenu1.Size = new System.Drawing.Size(305, 23);
+            this.lblMenu1.Size = new System.Drawing.Size(406, 28);
             this.lblMenu1.TabIndex = 3;
-            this.lblMenu1.Text = "label1";
+            this.lblMenu1.Text = "Strawberry Match";
             this.lblMenu1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblMenu1.Click += new System.EventHandler(this.lblMenu1_Click);
             // 
@@ -356,28 +387,33 @@
             this.panel2.Controls.Add(this.pBoxMenuItem1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(305, 223);
+            this.panel2.Size = new System.Drawing.Size(406, 274);
             this.panel2.TabIndex = 2;
             // 
             // pBoxMenuItem1
             // 
             this.pBoxMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.pBoxMenuItem1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pBoxMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("pBoxMenuItem1.Image")));
             this.pBoxMenuItem1.Location = new System.Drawing.Point(0, 0);
+            this.pBoxMenuItem1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pBoxMenuItem1.Name = "pBoxMenuItem1";
-            this.pBoxMenuItem1.Size = new System.Drawing.Size(305, 223);
+            this.pBoxMenuItem1.Size = new System.Drawing.Size(406, 274);
+            this.pBoxMenuItem1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pBoxMenuItem1.TabIndex = 0;
             this.pBoxMenuItem1.TabStop = false;
             // 
             // FoodMenuForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.YellowGreen;
-            this.ClientSize = new System.Drawing.Size(622, 619);
+            this.ClientSize = new System.Drawing.Size(829, 762);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FoodMenuForm";
             this.Text = "FoodMenu";
             this.Load += new System.EventHandler(this.FoodMenu_Load);
@@ -389,6 +425,7 @@
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtOrderQty3)).EndInit();
             this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxMenuItem3)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtOrderQty2)).EndInit();
