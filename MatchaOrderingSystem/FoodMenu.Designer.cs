@@ -74,6 +74,7 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -104,22 +105,23 @@
             // 
             // txtOrderQty4
             // 
-            this.txtOrderQty4.BackColor = System.Drawing.Color.GreenYellow;
+            this.txtOrderQty4.BackColor = System.Drawing.Color.NavajoWhite;
             this.txtOrderQty4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOrderQty4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtOrderQty4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOrderQty4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOrderQty4.ForeColor = System.Drawing.Color.DarkGreen;
-            this.txtOrderQty4.Location = new System.Drawing.Point(0, 277);
+            this.txtOrderQty4.Location = new System.Drawing.Point(0, 279);
             this.txtOrderQty4.Name = "txtOrderQty4";
             this.txtOrderQty4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtOrderQty4.Size = new System.Drawing.Size(305, 27);
+            this.txtOrderQty4.Size = new System.Drawing.Size(305, 25);
             this.txtOrderQty4.TabIndex = 5;
             this.txtOrderQty4.ValueChanged += new System.EventHandler(this.txtOrderQty4_ValueChanged);
             // 
             // lblMenuPrice4
             // 
+            this.lblMenuPrice4.BackColor = System.Drawing.Color.SeaShell;
             this.lblMenuPrice4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblMenuPrice4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMenuPrice4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMenuPrice4.Location = new System.Drawing.Point(0, 249);
             this.lblMenuPrice4.Name = "lblMenuPrice4";
             this.lblMenuPrice4.Size = new System.Drawing.Size(305, 23);
@@ -129,8 +131,9 @@
             // 
             // lblMenu4
             // 
+            this.lblMenu4.BackColor = System.Drawing.Color.SeaShell;
             this.lblMenu4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblMenu4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMenu4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMenu4.Location = new System.Drawing.Point(0, 226);
             this.lblMenu4.Name = "lblMenu4";
             this.lblMenu4.Size = new System.Drawing.Size(305, 23);
@@ -149,6 +152,7 @@
             // 
             // pBoxMenuItem4
             // 
+            this.pBoxMenuItem4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.pBoxMenuItem4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pBoxMenuItem4.Location = new System.Drawing.Point(0, 0);
             this.pBoxMenuItem4.Name = "pBoxMenuItem4";
@@ -170,22 +174,23 @@
             // 
             // txtOrderQty3
             // 
-            this.txtOrderQty3.BackColor = System.Drawing.Color.GreenYellow;
+            this.txtOrderQty3.BackColor = System.Drawing.Color.NavajoWhite;
             this.txtOrderQty3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOrderQty3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtOrderQty3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOrderQty3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOrderQty3.ForeColor = System.Drawing.Color.DarkGreen;
-            this.txtOrderQty3.Location = new System.Drawing.Point(0, 277);
+            this.txtOrderQty3.Location = new System.Drawing.Point(0, 279);
             this.txtOrderQty3.Name = "txtOrderQty3";
             this.txtOrderQty3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtOrderQty3.Size = new System.Drawing.Size(305, 27);
+            this.txtOrderQty3.Size = new System.Drawing.Size(305, 25);
             this.txtOrderQty3.TabIndex = 5;
             this.txtOrderQty3.ValueChanged += new System.EventHandler(this.txtOrderQty3_ValueChanged);
             // 
             // lblMenuPrice3
             // 
+            this.lblMenuPrice3.BackColor = System.Drawing.Color.SeaShell;
             this.lblMenuPrice3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblMenuPrice3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMenuPrice3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMenuPrice3.Location = new System.Drawing.Point(0, 249);
             this.lblMenuPrice3.Name = "lblMenuPrice3";
             this.lblMenuPrice3.Size = new System.Drawing.Size(305, 23);
@@ -195,8 +200,9 @@
             // 
             // lblMenu3
             // 
+            this.lblMenu3.BackColor = System.Drawing.Color.SeaShell;
             this.lblMenu3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblMenu3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMenu3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMenu3.Location = new System.Drawing.Point(0, 226);
             this.lblMenu3.Name = "lblMenu3";
             this.lblMenu3.Size = new System.Drawing.Size(305, 23);
@@ -215,6 +221,7 @@
             // 
             // pBoxMenuItem3
             // 
+            this.pBoxMenuItem3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.pBoxMenuItem3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pBoxMenuItem3.Location = new System.Drawing.Point(0, 0);
             this.pBoxMenuItem3.Name = "pBoxMenuItem3";
@@ -224,6 +231,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.panel3.Controls.Add(this.txtOrderQty2);
             this.panel3.Controls.Add(this.lblMenuPrice2);
             this.panel3.Controls.Add(this.lblMenu2);
@@ -236,22 +244,23 @@
             // 
             // txtOrderQty2
             // 
-            this.txtOrderQty2.BackColor = System.Drawing.Color.GreenYellow;
+            this.txtOrderQty2.BackColor = System.Drawing.Color.NavajoWhite;
             this.txtOrderQty2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOrderQty2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtOrderQty2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOrderQty2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOrderQty2.ForeColor = System.Drawing.Color.DarkGreen;
-            this.txtOrderQty2.Location = new System.Drawing.Point(0, 276);
+            this.txtOrderQty2.Location = new System.Drawing.Point(0, 278);
             this.txtOrderQty2.Name = "txtOrderQty2";
             this.txtOrderQty2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtOrderQty2.Size = new System.Drawing.Size(305, 27);
+            this.txtOrderQty2.Size = new System.Drawing.Size(305, 25);
             this.txtOrderQty2.TabIndex = 5;
             this.txtOrderQty2.ValueChanged += new System.EventHandler(this.txtOrderQty2_ValueChanged);
             // 
             // lblMenuPrice2
             // 
+            this.lblMenuPrice2.BackColor = System.Drawing.Color.SeaShell;
             this.lblMenuPrice2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblMenuPrice2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMenuPrice2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMenuPrice2.Location = new System.Drawing.Point(0, 246);
             this.lblMenuPrice2.Name = "lblMenuPrice2";
             this.lblMenuPrice2.Size = new System.Drawing.Size(305, 23);
@@ -261,8 +270,9 @@
             // 
             // lblMenu2
             // 
+            this.lblMenu2.BackColor = System.Drawing.Color.SeaShell;
             this.lblMenu2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblMenu2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMenu2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMenu2.Location = new System.Drawing.Point(0, 223);
             this.lblMenu2.Name = "lblMenu2";
             this.lblMenu2.Size = new System.Drawing.Size(305, 23);
@@ -281,6 +291,7 @@
             // 
             // pBoxMenuItem2
             // 
+            this.pBoxMenuItem2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.pBoxMenuItem2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pBoxMenuItem2.Location = new System.Drawing.Point(0, 0);
             this.pBoxMenuItem2.Name = "pBoxMenuItem2";
@@ -302,22 +313,23 @@
             // 
             // txtOrderQty1
             // 
-            this.txtOrderQty1.BackColor = System.Drawing.Color.GreenYellow;
+            this.txtOrderQty1.BackColor = System.Drawing.Color.NavajoWhite;
             this.txtOrderQty1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOrderQty1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtOrderQty1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOrderQty1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOrderQty1.ForeColor = System.Drawing.Color.DarkGreen;
-            this.txtOrderQty1.Location = new System.Drawing.Point(0, 276);
+            this.txtOrderQty1.Location = new System.Drawing.Point(0, 278);
             this.txtOrderQty1.Name = "txtOrderQty1";
             this.txtOrderQty1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtOrderQty1.Size = new System.Drawing.Size(305, 27);
+            this.txtOrderQty1.Size = new System.Drawing.Size(305, 25);
             this.txtOrderQty1.TabIndex = 5;
             this.txtOrderQty1.ValueChanged += new System.EventHandler(this.txtOrderQty1_ValueChanged);
             // 
             // lblMenuPrice1
             // 
+            this.lblMenuPrice1.BackColor = System.Drawing.Color.SeaShell;
             this.lblMenuPrice1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblMenuPrice1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMenuPrice1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMenuPrice1.Location = new System.Drawing.Point(0, 246);
             this.lblMenuPrice1.Name = "lblMenuPrice1";
             this.lblMenuPrice1.Size = new System.Drawing.Size(305, 23);
@@ -328,8 +340,9 @@
             // 
             // lblMenu1
             // 
+            this.lblMenu1.BackColor = System.Drawing.Color.SeaShell;
             this.lblMenu1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblMenu1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMenu1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMenu1.Location = new System.Drawing.Point(0, 223);
             this.lblMenu1.Name = "lblMenu1";
             this.lblMenu1.Size = new System.Drawing.Size(305, 23);
@@ -349,6 +362,7 @@
             // 
             // pBoxMenuItem1
             // 
+            this.pBoxMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.pBoxMenuItem1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pBoxMenuItem1.Location = new System.Drawing.Point(0, 0);
             this.pBoxMenuItem1.Name = "pBoxMenuItem1";

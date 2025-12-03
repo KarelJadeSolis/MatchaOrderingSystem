@@ -59,18 +59,6 @@
     <Compile Include="FoodMenu.Designer.cs">
       <DependentUpon>FoodMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="FoodMenuCakes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FoodMenuCakes.Designer.cs">
-      <DependentUpon>FoodMenuCakes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DrinkMenuIced.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DrinkMenuIced.Designer.cs">
-      <DependentUpon>DrinkMenuIced.cs</DependentUpon>
-    </Compile>
     <Compile Include="Landing Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,12 +84,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FoodMenu.resx">
       <DependentUpon>FoodMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FoodMenuCakes.resx">
-      <DependentUpon>FoodMenuCakes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DrinkMenuIced.resx">
-      <DependentUpon>DrinkMenuIced.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Landing Page.resx">
       <DependentUpon>Landing Page.cs</DependentUpon>
