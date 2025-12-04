@@ -21,14 +21,17 @@ namespace MatchaOrderingSystem
         {
             InitializeComponent();
             _orderRepository = new OrderRepository();
+
+
         }
 
         public FoodMenuForm(params MenuItem[] menuItems)
         {
             InitializeComponent();
 
-            _menuItems = menuItems;
-            Orders = new List<MenuItem>();
+            _orderRepository = new OrderRepository();   // REQUIRED FIX
+            _menuItems = menuItems;                     // REQUIRED FIX
+            Orders = new List<MenuItem>();              // keep this
 
             lblMenu1.Text = menuItems.Length > 0 ? menuItems[0].Name : "";
             lblMenu2.Text = menuItems.Length > 1 ? menuItems[1].Name : "";
@@ -43,16 +46,21 @@ namespace MatchaOrderingSystem
             pBoxMenuItem1.Image = menuItems.Length > 0 ? LoadSafe(menuItems[0].PhotoPath) : null;
             pBoxMenuItem1.SizeMode = PictureBoxSizeMode.StretchImage;
             pBoxMenuItem1.BorderStyle = BorderStyle.FixedSingle;
+
             pBoxMenuItem2.Image = menuItems.Length > 1 ? LoadSafe(menuItems[1].PhotoPath) : null;
             pBoxMenuItem2.SizeMode = PictureBoxSizeMode.StretchImage;
+
             pBoxMenuItem3.Image = menuItems.Length > 2 ? LoadSafe(menuItems[2].PhotoPath) : null;
             pBoxMenuItem3.SizeMode = PictureBoxSizeMode.StretchImage;
+
             pBoxMenuItem4.Image = menuItems.Length > 3 ? LoadSafe(menuItems[3].PhotoPath) : null;
             pBoxMenuItem4.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void FoodMenu_Load(object sender, EventArgs e)
         {
+            
+
             SetMinimumOrders();
         }
 
@@ -62,12 +70,12 @@ namespace MatchaOrderingSystem
             int azukiMatchaStock = _orderRepository.GetStock(_menuItems[1].Name);
             int classicMatchaStock = _orderRepository.GetStock(_menuItems[2].Name);
             int chocolateMatchaStock = _orderRepository.GetStock(_menuItems[3].Name);
-           
 
-            numUpDownSM.Minimum = strawberryMatchaStock;
-            numUpDownAM.Minimum = azukiMatchaStock;
-            numUpDownCM.Minimum = classicMatchaStock;
-            numUpDownM.Minimum = chocolateMatchaStock;
+
+            numUpDownSM.Maximum = strawberryMatchaStock;
+            numUpDownAM.Maximum = azukiMatchaStock;
+            numUpDownCM.Maximum = classicMatchaStock;
+            numUpDownM.Maximum = chocolateMatchaStock;
             ///
         }
 

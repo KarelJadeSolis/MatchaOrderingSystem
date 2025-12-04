@@ -40,8 +40,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -55,12 +57,11 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -84,11 +85,11 @@
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label1.Font = new System.Drawing.Font("Cooper Black", 25F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.label1.ForeColor = System.Drawing.Color.LightGreen;
             this.label1.Location = new System.Drawing.Point(203, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 41);
+            this.label1.Size = new System.Drawing.Size(166, 41);
             this.label1.TabIndex = 3;
             this.label1.Text = "ORDERS";
             // 
@@ -98,11 +99,11 @@
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label2.Font = new System.Drawing.Font("Cooper Black", 18F);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(86, 144);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 29);
+            this.label2.Size = new System.Drawing.Size(75, 31);
             this.label2.TabIndex = 4;
             this.label2.Text = "Menu";
             // 
@@ -111,11 +112,11 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.Font = new System.Drawing.Font("Cooper Black", 18F);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(257, 144);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 29);
+            this.label3.Size = new System.Drawing.Size(57, 31);
             this.label3.TabIndex = 5;
             this.label3.Text = "Qty.";
             // 
@@ -124,11 +125,11 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label4.Font = new System.Drawing.Font("Cooper Black", 18F);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Location = new System.Drawing.Point(448, 144);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 29);
+            this.label4.Size = new System.Drawing.Size(71, 31);
             this.label4.TabIndex = 6;
             this.label4.Text = "Price";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -163,11 +164,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Font = new System.Drawing.Font("Cooper Black", 12F);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label6.Location = new System.Drawing.Point(236, 520);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 19);
+            this.label6.Size = new System.Drawing.Size(100, 20);
             this.label6.TabIndex = 11;
             this.label6.Text = "Delivery Info.";
             // 
@@ -191,22 +192,31 @@
             this.panel5.Size = new System.Drawing.Size(609, 50);
             this.panel5.TabIndex = 10;
             // 
-            // button1
+            // button5
             // 
-            this.button1.BackColor = System.Drawing.Color.Green;
-            this.button1.Font = new System.Drawing.Font("Cooper Black", 11F);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(266, 7);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 32);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "ORDER MORE";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.Location = new System.Drawing.Point(491, 0);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(94, 47);
+            this.button5.TabIndex = 3;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(32, 7);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 33);
+            this.button4.TabIndex = 2;
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Green;
-            this.button2.Font = new System.Drawing.Font("Cooper Black", 11F);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button2.Location = new System.Drawing.Point(146, 11);
             this.button2.Name = "button2";
@@ -215,15 +225,27 @@
             this.button2.Text = "Add - ons";
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Green;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(266, 7);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(134, 32);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "ORDER MORE";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Green;
-            this.label7.Font = new System.Drawing.Font("Cooper Black", 10F);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label7.Location = new System.Drawing.Point(3, 691);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(219, 16);
+            this.label7.Size = new System.Drawing.Size(199, 17);
             this.label7.TabIndex = 12;
             this.label7.Text = "SELECT PAYMENT METHOD:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -338,27 +360,6 @@
             this.numericUpDown2.Size = new System.Drawing.Size(72, 20);
             this.numericUpDown2.TabIndex = 24;
             // 
-            // button4
-            // 
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(32, 7);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 33);
-            this.button4.TabIndex = 2;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(491, 0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(94, 47);
-            this.button5.TabIndex = 3;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // button7
             // 
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
@@ -398,11 +399,19 @@
             this.pictureBox4.TabIndex = 28;
             this.pictureBox4.TabStop = false;
             // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Location = new System.Drawing.Point(572, 116);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(29, 298);
+            this.vScrollBar1.TabIndex = 29;
+            // 
             // Ordering_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 776);
+            this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -479,5 +488,6 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.VScrollBar vScrollBar1;
     }
 }

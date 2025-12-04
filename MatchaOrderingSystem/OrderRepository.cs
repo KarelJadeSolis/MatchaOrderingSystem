@@ -8,41 +8,50 @@ namespace MatchaOrderingSystem
     public class OrderRepository
     {
         private const int ORDER_LIMIT_PER_DAY = 100;
-        public OrderRepository()
-        {
-            
-        }
+
+        // In-memory store for example
+        private readonly List<OrderItem> _orders = new List<OrderItem>();
 
         public void Save(OrderItem order)
         {
-            // Implementation to save the order
+            _orders.Add(order);
         }
 
         public List<OrderItem> GetOrders()
         {
-            // Implementation to get orders
-            return new List<OrderItem>();
+            return _orders;
         }
 
         public int GetStock(string menuItem)
         {
-           var ordersForTheDay = GetOrders()
-                .Where(order => order.Item.Equals(menuItem))
-                .Where(order => order.OrderDate.Date == DateTime.Now.Date)
-                .Count();
+            int ordersForTheDay = _orders.Count(order =>
+                order.Item.Equals(menuItem, StringComparison.OrdinalIgnoreCase) &&
+                order.OrderDate.Date == DateTime.Today);
 
-           return ORDER_LIMIT_PER_DAY - ordersForTheDay;
+            return ORDER_LIMIT_PER_DAY - ordersForTheDay;
         }
 
-        public void UpdateOrder(OrderItem order)
+        public void UpdateOrder(OrderItem updatedOrder)
         {
-            // Implementation to update an order
-            // update customer name
+            var existing = _orders.FirstOrDefault(o => o.Id == updatedOrder.Id);
+
+            if (existing != null)
+            {
+                existing.CustomerName = updatedOrder.CustomerName;
+                existing.Item = updatedOrder.Item;
+                existing.Quantity = updatedOrder.Quantity;
+                existing.OrderDate = updatedOrder.OrderDate;
+            }
         }
 
         public void DeleteOrder(int orderId)
         {
-            // Implementation to delete an order
+            var orderToDelete = _orders.FirstOrDefault(o => o.Id == orderId);
+            if (orderToDelete != null)
+            {
+                _orders.Remove(orderToDelete);
+            }
         }
     }
 }
+
