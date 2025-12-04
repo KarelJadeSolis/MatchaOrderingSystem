@@ -129,7 +129,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Impact", 55F);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(373, 0);
+            this.label2.Location = new System.Drawing.Point(381, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(153, 91);
             this.label2.TabIndex = 4;
@@ -149,7 +149,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel3.Controls.Add(this.label8);
             this.panel3.Location = new System.Drawing.Point(15, 223);
             this.panel3.Name = "panel3";
@@ -159,10 +159,10 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Chartreuse;
-            this.label8.Location = new System.Drawing.Point(29, 6);
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(29, 7);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(525, 24);
             this.label8.TabIndex = 0;
@@ -181,24 +181,26 @@
             // 
             // btnMenu2
             // 
+            this.btnMenu2.BackColor = System.Drawing.Color.OliveDrab;
             this.btnMenu2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenu2.Location = new System.Drawing.Point(13, 3);
             this.btnMenu2.Name = "btnMenu2";
             this.btnMenu2.Size = new System.Drawing.Size(203, 32);
             this.btnMenu2.TabIndex = 6;
             this.btnMenu2.Text = "Menu";
-            this.btnMenu2.UseVisualStyleBackColor = true;
+            this.btnMenu2.UseVisualStyleBackColor = false;
             this.btnMenu2.Click += new System.EventHandler(this.btnMenu2_Click);
             // 
             // btnAbout_Contact
             // 
+            this.btnAbout_Contact.BackColor = System.Drawing.Color.OliveDrab;
             this.btnAbout_Contact.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbout_Contact.Location = new System.Drawing.Point(224, 3);
             this.btnAbout_Contact.Name = "btnAbout_Contact";
             this.btnAbout_Contact.Size = new System.Drawing.Size(336, 32);
             this.btnAbout_Contact.TabIndex = 4;
             this.btnAbout_Contact.Text = "About Us  Contact Us";
-            this.btnAbout_Contact.UseVisualStyleBackColor = true;
+            this.btnAbout_Contact.UseVisualStyleBackColor = false;
             this.btnAbout_Contact.Click += new System.EventHandler(this.btnAbout_Contact_Click);
             // 
             // pictureBox4
