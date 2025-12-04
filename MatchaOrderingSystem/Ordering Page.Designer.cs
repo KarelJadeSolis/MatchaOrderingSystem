@@ -82,11 +82,11 @@
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label1.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Cooper Black", 25F);
             this.label1.ForeColor = System.Drawing.Color.LightGreen;
-            this.label1.Location = new System.Drawing.Point(228, 69);
+            this.label1.Location = new System.Drawing.Point(203, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 29);
+            this.label1.Size = new System.Drawing.Size(169, 41);
             this.label1.TabIndex = 3;
             this.label1.Text = "ORDERS";
             // 
@@ -194,9 +194,9 @@
             this.button1.BackColor = System.Drawing.Color.Green;
             this.button1.Font = new System.Drawing.Font("Cooper Black", 11F);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(257, 8);
+            this.button1.Location = new System.Drawing.Point(266, 7);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 28);
+            this.button1.Size = new System.Drawing.Size(134, 32);
             this.button1.TabIndex = 0;
             this.button1.Text = "ORDER MORE";
             this.button1.UseVisualStyleBackColor = false;
@@ -208,7 +208,7 @@
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button2.Location = new System.Drawing.Point(146, 11);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(92, 23);
+            this.button2.Size = new System.Drawing.Size(92, 29);
             this.button2.TabIndex = 1;
             this.button2.Text = "Add - ons";
             this.button2.UseVisualStyleBackColor = false;
