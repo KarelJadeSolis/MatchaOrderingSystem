@@ -394,6 +394,7 @@
             this.Name = "Landing_Page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Landing_Page";
+            this.Load += new System.EventHandler(this.Landing_Page_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();

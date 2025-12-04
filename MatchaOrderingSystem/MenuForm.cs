@@ -81,5 +81,10 @@ namespace MatchaOrderingSystem
 
             MessageBox.Show($"Total Order Price: {total}");
         }
+
+        private void pnlMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -15,10 +16,11 @@ namespace MatchaOrderingSystem
     {
         public List<MenuItem> Orders { get; set; }
         private readonly MenuItem[] _menuItems;
-
+        private readonly OrderRepository _orderRepository;
         public FoodMenuForm()
         {
             InitializeComponent();
+            _orderRepository = new OrderRepository();
         }
 
         public FoodMenuForm(params MenuItem[] menuItems)
@@ -33,10 +35,10 @@ namespace MatchaOrderingSystem
             lblMenu3.Text = menuItems.Length > 2 ? menuItems[2].Name : "";
             lblMenu4.Text = menuItems.Length > 3 ? menuItems[3].Name : "";
 
-            lblMenuPrice1.Text = menuItems.Length > 0 ? "$" + menuItems[0].Price.ToString("0.00") : "";
-            lblMenuPrice2.Text = menuItems.Length > 1 ? "$" + menuItems[1].Price.ToString("0.00") : "";
-            lblMenuPrice3.Text = menuItems.Length > 2 ? "$" + menuItems[2].Price.ToString("0.00") : "";
-            lblMenuPrice4.Text = menuItems.Length > 3 ? "$" + menuItems[3].Price.ToString("0.00") : "";
+            lblMenuPrice1.Text = menuItems.Length > 0 ? "PhP " + menuItems[0].Price.ToString("0.00") : "";
+            lblMenuPrice2.Text = menuItems.Length > 1 ? "PhP " + menuItems[1].Price.ToString("0.00") : "";
+            lblMenuPrice3.Text = menuItems.Length > 2 ? "PhP " + menuItems[2].Price.ToString("0.00") : "";
+            lblMenuPrice4.Text = menuItems.Length > 3 ? "PhP " + menuItems[3].Price.ToString("0.00") : "";
 
             pBoxMenuItem1.Image = menuItems.Length > 0 ? LoadSafe(menuItems[0].PhotoPath) : null;
             pBoxMenuItem1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -51,35 +53,50 @@ namespace MatchaOrderingSystem
 
         private void FoodMenu_Load(object sender, EventArgs e)
         {
+            SetMinimumOrders();
+        }
 
+        private void SetMinimumOrders()
+        {
+            int strawberryMatchaStock = _orderRepository.GetStock(_menuItems[0].Name);
+            int azukiMatchaStock = _orderRepository.GetStock(_menuItems[1].Name);
+            int classicMatchaStock = _orderRepository.GetStock(_menuItems[2].Name);
+            int chocolateMatchaStock = _orderRepository.GetStock(_menuItems[3].Name);
+           
+
+            numUpDownSM.Minimum = strawberryMatchaStock;
+            numUpDownAM.Minimum = azukiMatchaStock;
+            numUpDownCM.Minimum = classicMatchaStock;
+            numUpDownM.Minimum = chocolateMatchaStock;
+            ///
         }
 
         private void txtOrderQty1_ValueChanged(object sender, EventArgs e)
         {
             if (Orders.Any(q => q.Name.Equals(_menuItems[0].Name)))
                 Orders.Remove(Orders.FirstOrDefault(o => o.Name == _menuItems[0].Name));
-            Orders.Add(new MenuItem(_menuItems[0].Name, _menuItems[0].Price * Convert.ToDouble(txtOrderQty1.Value)));
+            Orders.Add(new MenuItem(_menuItems[0].Name, _menuItems[0].Price * Convert.ToDouble(numUpDownSM.Value)));
         }
 
         private void txtOrderQty2_ValueChanged(object sender, EventArgs e)
         {
             if (Orders.Any(q => q.Name.Equals(_menuItems[1].Name)))
                 Orders.Remove(Orders.FirstOrDefault(o => o.Name == _menuItems[1].Name));
-            Orders.Add(new MenuItem(_menuItems[1].Name, _menuItems[1].Price * Convert.ToDouble(txtOrderQty2.Value)));
+            Orders.Add(new MenuItem(_menuItems[1].Name, _menuItems[1].Price * Convert.ToDouble(numUpDownAM.Value)));
         }
 
         private void txtOrderQty3_ValueChanged(object sender, EventArgs e)
         {
             if (Orders.Any(q => q.Name.Equals(_menuItems[2].Name)))
                 Orders.Remove(Orders.FirstOrDefault(o => o.Name == _menuItems[2].Name));
-            Orders.Add(new MenuItem(_menuItems[2].Name, _menuItems[2].Price * Convert.ToDouble(txtOrderQty3.Value)));
+            Orders.Add(new MenuItem(_menuItems[2].Name, _menuItems[2].Price * Convert.ToDouble(numUpDownM.Value)));
         }
 
         private void txtOrderQty4_ValueChanged(object sender, EventArgs e)
         {
             if (Orders.Any(q => q.Name.Equals(_menuItems[3].Name)))
                 Orders.Remove(Orders.FirstOrDefault(o => o.Name == _menuItems[3].Name));
-            Orders.Add(new MenuItem(_menuItems[3].Name, _menuItems[3].Price * Convert.ToDouble(txtOrderQty4.Value)));
+            Orders.Add(new MenuItem(_menuItems[3].Name, _menuItems[3].Price * Convert.ToDouble(numUpDownCM.Value)));
         }
 
         private Image LoadSafe(string path)
@@ -100,6 +117,11 @@ namespace MatchaOrderingSystem
         }
 
         private void pBoxMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblMenuPrice2_Click(object sender, EventArgs e)
         {
 
         }

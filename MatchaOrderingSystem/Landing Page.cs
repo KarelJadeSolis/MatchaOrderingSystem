@@ -54,5 +54,10 @@ namespace MatchaOrderingSystem
             menuForm.ShowDialog();
             
         }
+
+        private void Landing_Page_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -77,6 +77,8 @@
     <Compile Include="Ordering Page.Designer.cs">
       <DependentUpon>Ordering Page.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrderItem.cs" />
+    <Compile Include="OrderRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Contact &amp; About Us Page.resx">

@@ -55,9 +55,8 @@
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(197, 955);
+            this.panel1.Size = new System.Drawing.Size(148, 776);
             this.panel1.TabIndex = 0;
             // 
             // btnCake
@@ -67,10 +66,9 @@
             this.btnCake.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCake.Font = new System.Drawing.Font("NSimSun", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCake.ForeColor = System.Drawing.Color.White;
-            this.btnCake.Location = new System.Drawing.Point(0, 180);
-            this.btnCake.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCake.Location = new System.Drawing.Point(0, 146);
             this.btnCake.Name = "btnCake";
-            this.btnCake.Size = new System.Drawing.Size(197, 57);
+            this.btnCake.Size = new System.Drawing.Size(148, 46);
             this.btnCake.TabIndex = 5;
             this.btnCake.Text = "Cake";
             this.btnCake.UseVisualStyleBackColor = false;
@@ -79,10 +77,9 @@
             // panel7
             // 
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 163);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Location = new System.Drawing.Point(0, 132);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(197, 17);
+            this.panel7.Size = new System.Drawing.Size(148, 14);
             this.panel7.TabIndex = 4;
             // 
             // btnIced
@@ -92,10 +89,9 @@
             this.btnIced.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIced.Font = new System.Drawing.Font("NSimSun", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIced.ForeColor = System.Drawing.Color.White;
-            this.btnIced.Location = new System.Drawing.Point(0, 106);
-            this.btnIced.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIced.Location = new System.Drawing.Point(0, 86);
             this.btnIced.Name = "btnIced";
-            this.btnIced.Size = new System.Drawing.Size(197, 57);
+            this.btnIced.Size = new System.Drawing.Size(148, 46);
             this.btnIced.TabIndex = 0;
             this.btnIced.Text = "Iced";
             this.btnIced.UseVisualStyleBackColor = false;
@@ -105,18 +101,16 @@
             // 
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(197, 106);
+            this.panel6.Size = new System.Drawing.Size(148, 86);
             this.panel6.TabIndex = 3;
             // 
             // panel5
             // 
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 849);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Location = new System.Drawing.Point(0, 690);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(197, 106);
+            this.panel5.Size = new System.Drawing.Size(148, 86);
             this.panel5.TabIndex = 2;
             // 
             // panel2
@@ -124,20 +118,18 @@
             this.panel2.BackColor = System.Drawing.Color.SeaShell;
             this.panel2.Controls.Add(this.btnOrder);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(197, 903);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Location = new System.Drawing.Point(148, 734);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(616, 52);
+            this.panel2.Size = new System.Drawing.Size(462, 42);
             this.panel2.TabIndex = 1;
             // 
             // btnOrder
             // 
-            this.btnOrder.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnOrder.BackColor = System.Drawing.Color.OliveDrab;
             this.btnOrder.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnOrder.Location = new System.Drawing.Point(403, 0);
-            this.btnOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOrder.Location = new System.Drawing.Point(271, 0);
             this.btnOrder.Name = "btnOrder";
-            this.btnOrder.Size = new System.Drawing.Size(213, 52);
+            this.btnOrder.Size = new System.Drawing.Size(191, 42);
             this.btnOrder.TabIndex = 0;
             this.btnOrder.Text = "Order";
             this.btnOrder.UseVisualStyleBackColor = false;
@@ -147,10 +139,9 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.SeaShell;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(197, 851);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Location = new System.Drawing.Point(148, 692);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(616, 52);
+            this.panel3.Size = new System.Drawing.Size(462, 42);
             this.panel3.TabIndex = 2;
             // 
             // panel4
@@ -158,43 +149,40 @@
             this.panel4.Controls.Add(this.pnlMenu);
             this.panel4.Controls.Add(this.panel8);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(197, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Location = new System.Drawing.Point(148, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(616, 851);
+            this.panel4.Size = new System.Drawing.Size(462, 692);
             this.panel4.TabIndex = 3;
             // 
             // pnlMenu
             // 
             this.pnlMenu.BackColor = System.Drawing.Color.SeaShell;
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMenu.Location = new System.Drawing.Point(0, 106);
-            this.pnlMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlMenu.Location = new System.Drawing.Point(0, 86);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(616, 745);
+            this.pnlMenu.Size = new System.Drawing.Size(462, 606);
             this.pnlMenu.TabIndex = 4;
+            this.pnlMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMenu_Paint);
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.SeaShell;
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(616, 106);
+            this.panel8.Size = new System.Drawing.Size(462, 86);
             this.panel8.TabIndex = 3;
             // 
             // MenuForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
-            this.ClientSize = new System.Drawing.Size(813, 955);
+            this.ClientSize = new System.Drawing.Size(610, 776);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MenuForm";
