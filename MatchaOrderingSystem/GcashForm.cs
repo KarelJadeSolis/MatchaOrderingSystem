@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace MatchaOrderingSystem
 {
-    public partial class Ordering_Page : Form
+    public partial class GcashForm : Form
     {
-        public Ordering_Page()
+        public GcashForm()
         {
             InitializeComponent();
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
