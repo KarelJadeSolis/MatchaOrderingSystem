@@ -14,11 +14,13 @@ namespace MatchaOrderingSystem
         [STAThread]
         static void Main()
         {
+            SQLitePCL.Batteries.Init();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
            
             Application.Run( new Landing_Page());
-            
+           
+
         }
     }
 }

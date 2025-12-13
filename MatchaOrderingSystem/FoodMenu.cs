@@ -133,6 +133,11 @@ namespace MatchaOrderingSystem
         {
 
         }
+
+        private void pBoxMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public class MenuItem
@@ -145,7 +150,6 @@ namespace MatchaOrderingSystem
             Name = name;
             Price = price;
         }
-
         public MenuItem(string name, double price, string photoPath)
         {
             Name = name;

@@ -1,5 +1,7 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 
@@ -7,14 +9,25 @@ namespace MatchaOrderingSystem
 {
     public class OrderRepository
     {
-        private const int ORDER_LIMIT_PER_DAY = 100;
-
+        private readonly ISQLiteConnection _connection;
         // In-memory store for example
-        private readonly List<OrderItem> _orders = new List<OrderItem>();
+        private readonly List<OrderItem> _orders;
 
+
+        public OrderRepository()
+        {
+            string databasePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "matcha_order.db");
+            _connection = new SQLiteConnection(databasePath);
+            _connection.CreateTable<OrderItem>();
+            
+            _orders = _connection.Table<OrderItem>().ToList();
+        }
+        private const int ORDER_LIMIT_PER_DAY = 100;
+       
         public void Save(OrderItem order)
         {
             _orders.Add(order);
+            _connection.Insert(order);
         }
 
         public List<OrderItem> GetOrders()
@@ -33,6 +46,7 @@ namespace MatchaOrderingSystem
 
         public void UpdateOrder(OrderItem updatedOrder)
         {
+            _connection.Update(updatedOrder);
             var existing = _orders.FirstOrDefault(o => o.Id == updatedOrder.Id);
 
             if (existing != null)
@@ -49,6 +63,7 @@ namespace MatchaOrderingSystem
             var orderToDelete = _orders.FirstOrDefault(o => o.Id == orderId);
             if (orderToDelete != null)
             {
+                _connection.Delete(orderToDelete);
                 _orders.Remove(orderToDelete);
             }
         }

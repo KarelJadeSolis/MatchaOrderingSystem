@@ -12,16 +12,16 @@ namespace MatchaOrderingSystem
         public MenuForm()
         {
             InitializeComponent();
-            string rootPath = Application.StartupPath; // folder where EXE runs
-            string cakeImage0 = Path.Combine(rootPath, "..\\..\\Screenshot 2025-12-03 200704.png");
-            string cakeImage1 = Path.Combine(rootPath, "..\\..\\Screenshot 2025-12-03 200801.png");
-            string cakeImage2 = Path.Combine(rootPath, "..\\..\\Screenshot 2025-12-03 200940.png");
-            string cakeImage3 = Path.Combine(rootPath, "..\\..\\Screenshot 2025-12-03 201159.png");
+            
+            string cakeImage0 = Path.Combine(Application.StartupPath, "Screenshot 2025-12-03 200704.png");
+            string cakeImage1 = Path.Combine(Application.StartupPath, "Screenshot 2025-12-03 200801.png");
+            string cakeImage2 = Path.Combine(Application.StartupPath, "Screenshot 2025-12-03 200940.png");
+            string cakeImage3 = Path.Combine(Application.StartupPath, "Screenshot 2025-12-03 201159.png");
 
-            string icedImage0 = Path.Combine(rootPath, "..\\..\\Screenshot 2025-12-03 210306.png");
-            string icedImage1 = Path.Combine(rootPath, "..\\..\\Screenshot 2025-12-03 210320.png");
-            string icedImage2 = Path.Combine(rootPath, "..\\..\\Screenshot 2025-12-03 210406.png");
-            string icedImage3 = Path.Combine(rootPath, "..\\..\\Screenshot 2025-12-03 210422.png");
+            string icedImage0 = Path.Combine(Application.StartupPath, "Screenshot 2025-12-03 210306.png");
+            string icedImage1 = Path.Combine(Application.StartupPath, "Screenshot 2025-12-03 210320.png");
+            string icedImage2 = Path.Combine(Application.StartupPath, "Screenshot 2025-12-03 210406.png");
+            string icedImage3 = Path.Combine(Application.StartupPath, "Screenshot 2025-12-03 210422.png");
 
             cakes = new FoodMenuForm(
                 new MenuItem("Strawberry Matcha", 220, cakeImage0),

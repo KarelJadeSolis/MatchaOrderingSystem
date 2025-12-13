@@ -380,6 +380,7 @@
             this.pBoxMenuItem1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pBoxMenuItem1.TabIndex = 0;
             this.pBoxMenuItem1.TabStop = false;
+            this.pBoxMenuItem1.Click += new System.EventHandler(this.pBoxMenuItem1_Click);
             // 
             // FoodMenuForm
             // 
