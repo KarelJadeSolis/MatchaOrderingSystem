@@ -110,12 +110,6 @@
     <Compile Include="FoodMenu.Designer.cs">
       <DependentUpon>FoodMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="GcashForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GcashForm.Designer.cs">
-      <DependentUpon>GcashForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Landing Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,9 +137,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FoodMenu.resx">
       <DependentUpon>FoodMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GcashForm.resx">
-      <DependentUpon>GcashForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Landing Page.resx">
       <DependentUpon>Landing Page.cs</DependentUpon>

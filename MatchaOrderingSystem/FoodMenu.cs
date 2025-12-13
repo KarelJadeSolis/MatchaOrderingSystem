@@ -59,61 +59,120 @@ namespace MatchaOrderingSystem
 
         private void FoodMenu_Load(object sender, EventArgs e)
         {
-            
 
-            SetMinimumOrders();
+            SetMinimumOrdersCake();
+            SetMinimumOrdersIced();
         }
 
-        private void SetMinimumOrders()
+        private void SetMinimumOrdersCake()
         {
-            int strawberryMatchaStock = _orderRepository.GetStock(_menuItems[0].Name);
-            int azukiMatchaStock = _orderRepository.GetStock(_menuItems[1].Name);
-            int classicMatchaStock = _orderRepository.GetStock(_menuItems[2].Name);
-            int chocolateMatchaStock = _orderRepository.GetStock(_menuItems[3].Name);
+            for (int i = 0; i < _menuItems.Length; i++)
+            {
+                int availableStock = _orderRepository.GetStock(_menuItems[i].Name);
 
+               
+                {
+                    numUpDownSM.Maximum = _orderRepository.GetStock(_menuItems[0].Name);
+                    numUpDownAM.Maximum = _orderRepository.GetStock(_menuItems[1].Name);
+                    numUpDownCM.Maximum = _orderRepository.GetStock(_menuItems[2].Name);
+                    numUpDownM.Maximum = _orderRepository.GetStock(_menuItems[3].Name);
 
-            numUpDownSM.Maximum = strawberryMatchaStock;
-            numUpDownAM.Maximum = azukiMatchaStock;
-            numUpDownCM.Maximum = classicMatchaStock;
-            numUpDownM.Maximum = chocolateMatchaStock;
-            ///
+                    numUpDownSM.Minimum = 0;
+                    numUpDownAM.Minimum = 0;
+                    numUpDownCM.Minimum = 0;
+                    numUpDownM.Minimum = 0;
+                }
+            }
         }
 
+        private void SetMinimumOrdersIced()
+        {
+            for (int i = 0; i < _menuItems.Length; i++)
+            {
+                int availableStock = _orderRepository.GetStock(_menuItems[i].Name);
+
+
+                {
+                    numUpDownSM.Maximum = _orderRepository.GetStock(_menuItems[0].Name);
+                    numUpDownAM.Maximum = _orderRepository.GetStock(_menuItems[1].Name);
+                    numUpDownCM.Maximum = _orderRepository.GetStock(_menuItems[2].Name);
+                    numUpDownM.Maximum = _orderRepository.GetStock(_menuItems[3].Name);
+
+                    numUpDownAM.Minimum = 0;
+                    numUpDownAM.Minimum = 0;
+                    numUpDownCM.Minimum = 0;
+                    numUpDownM.Minimum = 0;
+                }
+            }
+        }
+
+        private void UpdateOrderQuantity(int index, NumericUpDown numUpDown)
+        {
+            if (index < 0 || index >= _menuItems.Length) return;
+
+            var menuItem = _menuItems[index];
+            int stock = _orderRepository.GetStock(menuItem.Name); // check stock
+            var existing = Orders.FirstOrDefault(o => o.Name == menuItem.Name);
+
+            if ((int)numUpDown.Value > 0)
+            {
+                if (numUpDown.Value > stock)
+                {
+                    MessageBox.Show($"{menuItem.Name} is out of stock or you exceeded the available quantity ({stock})!",
+                                    "Out of Stock", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    numUpDown.Value = stock; // reset to max available
+                    return;
+                }
+
+                if (existing != null)
+                {
+                    existing.Quantity = (int)numUpDown.Value;
+                }
+                else
+                {
+                    Orders.Add(new MenuItem(menuItem.Name, menuItem.Price, menuItem.PhotoPath)
+                    {
+                        Quantity = (int)numUpDown.Value
+                    });
+                }
+            }
+            else
+            {
+                if (existing != null)
+                {
+                    Orders.Remove(existing);
+                }
+            }
+        }
         private void txtOrderQty1_ValueChanged(object sender, EventArgs e)
         {
-            if (Orders.Any(q => q.Name.Equals(_menuItems[0].Name)))
-                Orders.Remove(Orders.FirstOrDefault(o => o.Name == _menuItems[0].Name));
-            Orders.Add(new MenuItem(_menuItems[0].Name, _menuItems[0].Price * Convert.ToDouble(numUpDownSM.Value)));
+            if (numUpDownSM.Value < 0) numUpDownSM.Value = 0;
+            UpdateOrderQuantity(0, numUpDownSM);
         }
 
         private void txtOrderQty2_ValueChanged(object sender, EventArgs e)
         {
-            if (Orders.Any(q => q.Name.Equals(_menuItems[1].Name)))
-                Orders.Remove(Orders.FirstOrDefault(o => o.Name == _menuItems[1].Name));
-            Orders.Add(new MenuItem(_menuItems[1].Name, _menuItems[1].Price * Convert.ToDouble(numUpDownAM.Value)));
+            if (numUpDownSM.Value < 0) numUpDownAM.Value = 0;
+            UpdateOrderQuantity(0, numUpDownAM);
         }
 
         private void txtOrderQty3_ValueChanged(object sender, EventArgs e)
         {
-            if (Orders.Any(q => q.Name.Equals(_menuItems[2].Name)))
-                Orders.Remove(Orders.FirstOrDefault(o => o.Name == _menuItems[2].Name));
-            Orders.Add(new MenuItem(_menuItems[2].Name, _menuItems[2].Price * Convert.ToDouble(numUpDownM.Value)));
+            if (numUpDownSM.Value < 0) numUpDownCM.Value = 0;
+            UpdateOrderQuantity(0, numUpDownCM);
         }
 
         private void txtOrderQty4_ValueChanged(object sender, EventArgs e)
         {
-            if (Orders.Any(q => q.Name.Equals(_menuItems[3].Name)))
-                Orders.Remove(Orders.FirstOrDefault(o => o.Name == _menuItems[3].Name));
-            Orders.Add(new MenuItem(_menuItems[3].Name, _menuItems[3].Price * Convert.ToDouble(numUpDownCM.Value)));
+            if (numUpDownSM.Value < 0) numUpDownM.Value = 0;
+            UpdateOrderQuantity(0, numUpDownM);
         }
-
         private Image LoadSafe(string path)
         {
             return !string.IsNullOrEmpty(path) && File.Exists(path)
                 ? Image.FromFile(path)
                 : null;
         }
-
         private void lblMenu1_Click(object sender, EventArgs e)
         {
 
@@ -144,11 +203,13 @@ namespace MatchaOrderingSystem
     {
         public string Name { get; set; }
         public double Price { get; set; }
+        public int Quantity { get; set; } = 1;
         public string PhotoPath { get; set; }
         public MenuItem(string name, double price)
         {
             Name = name;
             Price = price;
+           
         }
         public MenuItem(string name, double price, string photoPath)
         {
@@ -156,5 +217,8 @@ namespace MatchaOrderingSystem
             Price = price;
             PhotoPath = photoPath?? "";
         }
+        
     }
+
+
 }

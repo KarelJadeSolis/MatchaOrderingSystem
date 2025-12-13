@@ -13,9 +13,11 @@ namespace MatchaOrderingSystem
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
         public string Item { get; set; }
-        public string CustomerName { get; set; }
-        public double TotalPrice { get; set; }
         public int Quantity { get; set; }
+        public double Price { get; set; }
+
         public DateTime OrderDate { get; set; }
+
+        public double Subtotal => Quantity * Price;
     }
 }

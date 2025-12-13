@@ -9,7 +9,7 @@ namespace MatchaOrderingSystem
 {
     public class OrderRepository
     {
-        private readonly ISQLiteConnection _connection;
+        private readonly SQLiteConnection _connection;
         // In-memory store for example
         private readonly List<OrderItem> _orders;
 
@@ -34,6 +34,7 @@ namespace MatchaOrderingSystem
         {
             return _orders;
         }
+        
 
         public int GetStock(string menuItem)
         {
@@ -51,7 +52,6 @@ namespace MatchaOrderingSystem
 
             if (existing != null)
             {
-                existing.CustomerName = updatedOrder.CustomerName;
                 existing.Item = updatedOrder.Item;
                 existing.Quantity = updatedOrder.Quantity;
                 existing.OrderDate = updatedOrder.OrderDate;
@@ -66,6 +66,13 @@ namespace MatchaOrderingSystem
                 _connection.Delete(orderToDelete);
                 _orders.Remove(orderToDelete);
             }
+        }
+        public int GetSoldToday(string itemName)
+        {
+            DateTime today = DateTime.Today;
+            return _orders
+                .Where(o => o.Item == itemName && o.OrderDate.Date == today)
+                .Sum(o => o.Quantity);
         }
     }
 }

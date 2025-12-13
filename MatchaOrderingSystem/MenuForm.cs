@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace MatchaOrderingSystem
@@ -52,6 +54,7 @@ namespace MatchaOrderingSystem
             switchTo(cakes);
         }
 
+       
         private void switchTo(Form menuForm)
         {
             this.pnlMenu.Controls.Clear();
@@ -64,27 +67,32 @@ namespace MatchaOrderingSystem
 
         private void btnOrder_Click(object sender, EventArgs e)
         {
-            double total = 0;
-            foreach (var item in cakes.Orders) {
-                //calculate total price
-                Console.WriteLine($"Ordered Cake: {item.Name} - Price: {item.Price}");
-                Console.WriteLine(item.Name);
-                Console.WriteLine(item.Price);
-                total += item.Price;
+            
+            List<MenuItem> allOrders = new List<MenuItem>();
+
+            foreach (var item in cakes.Orders)
+            {
+                allOrders.Add(item);
             }
 
-            foreach (var item in iced.Orders) {
-                //calculate total price
-                Console.WriteLine($"Ordered Iced Drink: {item.Name} - Price: {item.Price}");
-                total += item.Price;
+            foreach (var item in iced.Orders)
+            {
+                allOrders.Add(item);
             }
 
-            MessageBox.Show($"Total Order Price: {total}");
+            double total = allOrders.Sum(i => i.Price * i.Quantity);
+           
+            Ordering_Page orderingPage = new Ordering_Page(total, allOrders);
+            orderingPage.ShowDialog();
+            this.Close();
+
+
         }
 
         private void pnlMenu_Paint(object sender, PaintEventArgs e)
         {
 
         }
+
     }
 }
