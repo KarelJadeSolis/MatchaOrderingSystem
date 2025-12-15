@@ -153,19 +153,19 @@ namespace MatchaOrderingSystem
         private void txtOrderQty2_ValueChanged(object sender, EventArgs e)
         {
             if (numUpDownSM.Value < 0) numUpDownAM.Value = 0;
-            UpdateOrderQuantity(0, numUpDownAM);
+            UpdateOrderQuantity(1, numUpDownAM);
         }
 
         private void txtOrderQty3_ValueChanged(object sender, EventArgs e)
         {
             if (numUpDownSM.Value < 0) numUpDownCM.Value = 0;
-            UpdateOrderQuantity(0, numUpDownCM);
+            UpdateOrderQuantity(2, numUpDownCM);
         }
 
         private void txtOrderQty4_ValueChanged(object sender, EventArgs e)
         {
             if (numUpDownSM.Value < 0) numUpDownM.Value = 0;
-            UpdateOrderQuantity(0, numUpDownM);
+            UpdateOrderQuantity(3, numUpDownM);
         }
         private Image LoadSafe(string path)
         {
