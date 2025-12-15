@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Globalization;
 namespace MatchaOrderingSystem
 {
     public partial class Ordering_Page : Form
@@ -127,6 +127,7 @@ namespace MatchaOrderingSystem
             
             _orderRepository = new OrderRepository();
             LoadUsersToDataGridView();
+           
         }
 
         private void txtName_TextChanged(object sender, EventArgs e)
@@ -164,13 +165,13 @@ namespace MatchaOrderingSystem
             {
                 HeaderText = "Price",
                 DataPropertyName = "Price",
-                DefaultCellStyle = new DataGridViewCellStyle { Format = "C2" } // Currency
+                DefaultCellStyle = new DataGridViewCellStyle { Format = "C2" } 
             });
             dataGidViewOrders.Columns.Add(new DataGridViewTextBoxColumn
             {
                 HeaderText = "Subtotal",
                 DataPropertyName = "Subtotal",
-                DefaultCellStyle = new DataGridViewCellStyle { Format = "C2" } // Currency
+                DefaultCellStyle = new DataGridViewCellStyle { Format = "C2" } 
             });
             dataGidViewOrders.Columns.Add(new DataGridViewTextBoxColumn
             {
@@ -227,6 +228,11 @@ namespace MatchaOrderingSystem
                     MessageBox.Show("Order deleted successfully!", "Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
+        }
+
+        private void lbltotal_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

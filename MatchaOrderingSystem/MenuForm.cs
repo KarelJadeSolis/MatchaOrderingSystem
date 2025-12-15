@@ -70,9 +70,11 @@ namespace MatchaOrderingSystem
             
             List<MenuItem> allOrders = new List<MenuItem>();
 
+
             foreach (var item in cakes.Orders)
             {
                 allOrders.Add(item);
+
             }
 
             foreach (var item in iced.Orders)
@@ -81,7 +83,13 @@ namespace MatchaOrderingSystem
             }
 
             double total = allOrders.Sum(i => i.Price * i.Quantity);
-           
+
+            if (total == 0)
+            {
+                MessageBox.Show("No items ordered.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            
             Ordering_Page orderingPage = new Ordering_Page(total, allOrders);
             orderingPage.ShowDialog();
             this.Close();
